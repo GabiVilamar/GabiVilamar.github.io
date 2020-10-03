@@ -52,7 +52,7 @@ html,body{
     width: 15%;
     position: fixed;
     transition: all .2s linear;
-    left: -16%;
+    left: -300px;
     box-shadow: 0 0 10px #b6b6b6, 0 0 20px #b6b6b6, 0 0 20px #b6b6b6;
 }
 nav{
