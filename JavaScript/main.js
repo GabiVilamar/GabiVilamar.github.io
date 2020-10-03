@@ -1,4 +1,4 @@
-window.alert("Olá, seja bem vinde!");
+//window.alert("Olá, seja bem vinde!");
 
 function goTo(element, speed){
     var href = element.attr('href');
