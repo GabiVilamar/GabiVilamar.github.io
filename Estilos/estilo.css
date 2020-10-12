@@ -3,97 +3,171 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 html,body{
-   
     height: 100%;
     color: black;
     font-family: "Roboto","Open Sans","Roboto", monospace;
 }
-#icone{
-    position: fixed ;
-   
+.botao{
+    width: 50px;
+    height: 50px;
+    margin: 0px 0px;
+    position: fixed;
+    margin: 15px 0px 0px 20px;
 }
-
+.botao label{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
 #check{
-    display: none;
-     
+    position: fixed;
+    z-index: 1;
+    width: 5%;
+    height: 5%;
+    opacity: 0;
+    cursor:pointer;
+}    
+span{
+    width: 45px;
+    height: 5px;
+    top: 20px;
+    left: 14px;
+    position: absolute;
+    background-color: orangered;
+    transition: all .3s linear;
 }
-
+span:before{
+    content: '';
+    width: 45px;
+    height: 5px;
+    bottom: -20px;
+    position: absolute;
+    background-color: orangered;
+    transition: all .3s linear;
+}
+span:after{
+    content: '';
+    width: 45px;
+    height: 5px;
+    top: -20px;
+    position: absolute;
+    background-color: orangered;
+    transition: all .3s linear;
+}
+#check:checked ~ span{
+    background-color: transparent;
+}
+#check:checked ~ span:before{
+   transform: translate(0px, -20px) rotate(-45deg);
+}
+#check:checked ~ span:after{
+    transform: translate(0px, 20px) rotate(45deg);
+ }/*
+ #check:checked ~ label{
+   border-radius: 50%;
+ }*/
+.menu{
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 12pt;
+    transition: all .8s linear;
+    position: fixed;
+    transform: translateX(-200px);
+    left: -20%;
+    width: 10em;
+    height: 15em;
+    background-color: black;
+    box-shadow: 0 0 5px orangered, 0 0 5px orangered, 0 0 5px orangered;
+}
+nav{
+    width: 100%;
+    position: absolute;
+    top:0px;
+} 
+nav a{
+    text-decoration: none;
+}
+.menu ul{
+    padding-top: 15px;
+    list-style: none;
+    margin-left: 13px;
+}  
+.menu li{
+    padding-top: 5px;
+    margin-bottom: 20px;
+}
+#check:checked ~ .menu{
+    transform: translateX(470px);
+}
+#check:checked ~ .menu nav a .link{
+    margin-top: 0;
+    transition-delay: .3s;
+}
 .icons-social{
-    margin-top: 560px;
-    text-align: center;
-
+    text-align: center; 
+    margin-top: 200px;
 }		
 .icons-social a{
     text-decoration: none;
     width: 40px;
     height: 40px;
-    background-color:#612F74;;
+    background-color:whitesmoke;
     border-radius: 30px;
-    color: white;
+    color: orangered;
     display: inline-block;
     margin: 0 5px;
     text-align: center;
     /*box-shadow: 0 0 10px #612F74, 0 0 20px #612F74, 0 0 20px #612F74;
 */}
+.icons-social a:hover{
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    background-color:orangered;
+    border-radius: 30px;
+    color: whitesmoke;
+    display: inline-block;
+    margin: 0 5px;
+    text-align: center;
+}
 .icons-social i{
     line-height: 40px;
 }
-#icone{
-    cursor: pointer;
-    padding: 15px;
-    position: fixed;
-    z-index: 1;
+#social, #social2{
+    color: orangered;
 }
-.barra{
-    background-color: whitesmoke;
-    height: 100%;
-    width: 15%;
-    position: fixed;
-    transition: all .2s linear;
-    left: -16%;
-    box-shadow: 0 0 10px #b6b6b6, 0 0 20px #b6b6b6, 0 0 20px #b6b6b6;
+#social3{
+    color:orangered;
+    padding-top: 10px;
+    padding-bottom: 15px;
 }
-nav{
-    width: 100%;
-    position: absolute;
-    top:60px;
-}
-nav a{
+.menu a{
     text-decoration: none;
+    color:whitesmoke;
 }
 .link{
-    background-color: white;
-    padding: 20px;
-    font-size: 11pt;
-    transition: all .2s linear;
-    color: #000000;
-    border-bottom: 2px solid #b6b6b6;
+    transition: all .3s linear;
     opacity: 1;
-    margin-top: 200px;
+
+}
+.menu:hover{
+box-shadow: 0 0 5px black, 0 0 5px black, 0 0 5px black;
 }
 
 .link:hover{
-    background-color: #612F74 ;
-    color: #b6b6b6;
-    box-shadow: 0 0 5px #612F74, 0 0 10px #612F74, 0 0 20px #612F74;
-}
-#check:checked ~ .barra{
-    transform: translateX(300px);
-}
-
-#check:checked ~ .barra nav a .link{
-    opacity: 2;
-    margin-top: 0;
-    transition-delay: .3s;
+    width: 100%;
+    color: orangered;
+    transform: translateX(15px);
+    transition: all .4s linear;
+   
 }
 figure img{
-    width: 20%;
+    width: 15%;
     border-radius: 50%;
     opacity: 1;
     cursor: pointer;
-    box-shadow: 0 0 5px #612F74, 0 0 10px #612F74, 0 0 10px #612F74;   
+    /*box-shadow: 0 0 5px #612F74, 0 0 10px #612F74, 0 0 10px #612F74;   */
 }
 figure{
     text-align: center;
@@ -101,34 +175,65 @@ figure{
     padding-bottom: 20px;
 } 
 .content{
-    width: 85%;
-    height: 100%;
-    margin-left: 15%;
-    font-size: 10px;
+    width: 100vw;
+    height: 100vh;
+    font-size: 12px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; 
-    padding: 20px; 
     border-radius: 5px;
     box-shadow: 0 0 10px #b6b6b6, 0 0 20px #b6b6b6, 0 0 20px #b6b6b6;   
     text-align: center;
-    padding-top: 50px; 
 }
 .content#home{
-    padding-top: 20px;   
+    padding-top: 20px;
 }
 .content#home p{
-    margin-bottom: 1cm;
-    margin-top: 1cm;
+    font-size: 25px;
+    margin-top: 3cm;
+    color: orangered;
 }
-#home{background-color: whitesmoke;}
+#home{background-image:url(/imagens/Background.png)}
 #formacao{background-color:whitesmoke;}
 #experiencia{background-color: whitesmoke;}
 #perfilP{background-color: whitesmoke;}
 #adicionais{background-color: whitesmoke;}
+.formacao{
+    height: 600px;
+    width: 600px;
+    background-color: white;
+    padding: 20px;
 
-section.content h2 >span{
+}
+.formacao ul{
+  list-style-type: none;
+}
+.content#formacao{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+.content#formacao h1{
+    padding-top: 10px;
+}
+.content#formacao strong{
+    color: #ff007f;
+}
+.content#formacao li{
+    font-size: 14px;
+    color:#808080;
+}
+
+/*section.content h2 >span{
     color:orangered;
+}*/
+.content h1{
+    color: black;
+    font-size: 40px;
 }
 footer{
     color: #000000;
@@ -136,22 +241,24 @@ footer{
     font:'arial';
     font-size: 12px;
     background: whitesmoke;
-    width: 85%;
-    margin-left: 15%;
+    width: 100%;
     border-bottom: 1px solid #b6b6b6;
     border-top: 0.5px solid #b6b6b6;
     border-radius: 5px;
 }
+.cv{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
 #download{
-    width: 8%;
-    border-radius: 1px;
-    background-color: #b6b6b6;
-    color: rgb(5, 5, 5);
-    padding: 6px;
-    position: absolute;
-    top: 90%;    
-    left:55%;
-    font-size: 10px;
+    
+    width: 100px;
+    border-radius: 3px;
+    background-color: black;
+    color: orangered;
+    padding: 10px;
+    position: relative;
+    font-size: 12px;
     text-decoration: none;
-   
 }

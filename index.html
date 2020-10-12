@@ -7,57 +7,61 @@
     <link rel="shortcut icon" href="imagens/letraP.jpg">
     <link rel="stylesheet" href="Estilos/estilo.css">
 </head>
-
 <body>
-      <input type="checkbox" id="check">
-      <label id="icone" for="check"><img src="imagens/icone.png"></label>
-
-     <div class="barra">
+    <!-- Defino aqui o meu botão de menu-->
+<div class="botao">
+    <input type="checkbox" id="check">
+    <label id="icone" for="check"></label>
+    <span></span>
+    <!-- Aqui crio minha classe menu, onde defino os itens da lista do menu-->
+    <div class="menu">
         <nav id="top">
             <ul>
-            <li><a href="#home" class="menuActive"><div class="link">Home</div></a></li>
+            <li><a href="#home"><div class="link">Home</div></a></li>
             <li><a href="#formacao"><div class="link">Formação</div></a></li>
-            <li><a href="#experiencia"><div class="link">Experiências</div></a></li>
+            <li><a href="#experiencia"><div class="link"> Experiência</div></a></li>
             <li> <a href="#perfilP"><div class="link">Perfil Profissional</div></a></li>
-            <li><a href="#adicionais"><div class="link">Informações Adicionais</div></a></li>
+            <li><a href="#adicionais"><div class="link">Adicionais</div></a></li>
             </ul>
         </nav>
-
+    </div>
+</div>
+ 
+<section id="home" class="content">
+    <figure>
+       <img src="imagens/eu.png" alt="foto-perfil">
+    </figure>
+        <h1>Olá,sou Gabrielle Vilamar</h1><br><br>
+           <h2>
+            <a href=""><i class="fas fa-envelope-open" id="social"></i></a>gabivilamar@gmail.com<br>
+            <a href=""><i class="fas fa-mobile-alt" id="social2"></i></a>(21)99251 1468
+            <p>Desenvolvedora Web & Mobile</p>  
+           </h2>
     <div class="icons-social">
             <a href="https://github.com/GabiVilamar"><i class="fab fa-github"></i></a>
             <a href="https://www.facebook.com/Gabii.Vilamar/"><i class="fab fa-facebook-f"></i></a>
             <a href="https://www.linkedin.com/in/gabrielle-v-8b241a107/"><i class="fab fa-linkedin-in"></i></a>
     </div>
- </div>
-    <section id="home" class="content">
-            <figure>
-                <img src="imagens/eu.png" alt="foto-perfil">
-            </figure>
-            <h2>Gabrielle Vilamar do Nascimento  
-            <a href=""><i class="fas fa-envelope-open"  ></i></a> <span>  gabivilamar@gmail.com</span>
-            <a href=""><i class="fas fa-mobile-alt"  ></i></a><span>  (21) 99251 1468</span>
-                
-            <p> Desenvolvedora Web and Mobile</p>  
-        </h2>
-          <!--<a href="meu_curriculo/Gabi_curriculo.pdf" id="download"download="GabrielleVilamar">Download CV</a>-->
-        </section>
-
+</section>
       <section id="formacao" class="content">
-       <h1>FORMAÇÃO</h1> 
-       <br>
-       <h2> Análise e Desenvolvimento de Sistemas informatizados / Faeterj - 2021<br><br>
-
+       <div class="formacao">
+        <h1>Minha Formação</h1>
+        <a href=""><i class="fas fa-spin fa-book-reader fa-5x" id="social3"></i></a>
+        <h2> Minha faculdade é a <strong>Faeterj Rio</strong> e meu curso é o de Análise e Desenvolvimento de Sistemas.
+        <p>
+            <strong>🍾Me formo em Dezembro de 2021🍾</strong>
+        </p><br>
+        <p>
+            Estou sempre estudando algo novo, buscando sempre áreas que fomentem minha profissão, estes são alguns:
+        </p><br>
         <ul>
-            <li>Curso CCNA Cisco módulos I e II / Nave do Conhecimento - 2017</li> 
-            <br>
-            <li>Inglês técnico (English Works) / Nave do conhecimento - 2017</li> 
-            <br>    
-            <li> Minicurso de Arduino / Nave do Conhecimento - 2017</li> 
-            <br> 
+            <li>Curso CCNA Cisco módulos I e II / Nave do Conhecimento - 2017</li><br>
+            <li>Inglês técnico (English Works) / Nave do conhecimento - 2017</li><br>
+            <li> Minicurso de Arduino / Nave do Conhecimento - 2017</li><br>  
         </ul>   
        </h2>
+       </div>
     </section>
-
     <section id="experiencia" class="content">
         <h1>EXPERIÊNCIA</h1><br><br><br>
         <h2> Estágio em Analista de Suporte____________________________DEZ/2018 - MAI/2020
@@ -88,19 +92,18 @@
                                 <p><br><br><br>
                                   >análise junto à equipe de desenvolvimento de novas funcionalidades e edição de documentos utilizados pelo sistema;                
                                 </p>
-              
-</section>
-
+                            </section>
     <section id="perfilP" class="content">
         <h1>PERFIL</h1>
         <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
         </h2>
+        <div class="cv">
+            <a href="meu_curriculo/Gabi_curriculo.pdf" id="download"download="GabrielleVilamar">Download CV</a>
+        </div>
     </section>
-
     <section id="adicionais" class="content">
         <h1>ADICIONAIS</h1>
         <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        </h2>
        
     </section>
     <footer>
