@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="shortcut icon" href="imagens/letraP.jpg">
+    <link rel="shortcut icon" href="fab fa-gofore"><i class=""></i>
     <link rel="stylesheet" href="Estilos/estilo.css">
 </head>
 <body>
+    <div class="scroller">
     <!-- Defino aqui o meu botão de menu-->
 <div class="botao">
     <input type="checkbox" id="check">
@@ -17,26 +18,29 @@
     <div class="menu">
         <nav id="top">
             <ul>
-            <li><a href="#home"><div class="link">Home</div></a></li>
-            <li><a href="#formacao"><div class="link">Formação</div></a></li>
-            <li><a href="#experiencia"><div class="link"> Experiência</div></a></li>
-            <li> <a href="#perfilP"><div class="link">Perfil Profissional</div></a></li>
-            <li><a href="#adicionais"><div class="link">Adicionais</div></a></li>
+            <li><a href="#home"><div class="link">🏠 Home</div></a></li>
+            <li><a href="#formacao"><div class="link">📚 Formação</div></a></li>
+            <li><a href="#experiencia"><div class="link">🧰 Experiência</div></a></li>
+            <li> <a href="#perfilP"><div class="link">👩‍💻 Perfil Profissional</div></a></li>
+            <li><a href="#adicionais"><div class="link">📰 Adicionais</div></a></li>
             </ul>
         </nav>
     </div>
 </div>
- 
 <section id="home" class="content">
-    <figure>
-       <img src="imagens/eu.png" alt="foto-perfil">
-    </figure>
-        <h1>Olá,sou Gabrielle Vilamar</h1><br><br>
-           <h2>
-            <a href=""><i class="fas fa-envelope-open" id="social"></i></a>gabivilamar@gmail.com<br>
-            <a href=""><i class="fas fa-mobile-alt" id="social2"></i></a>(21)99251 1468
-            <p>Desenvolvedora Web & Mobile</p>  
-           </h2>
+    
+    <div class="container">
+        <figure>
+            <img src="imagens/eu.png" alt="foto-perfil">
+         </figure>
+          <h1>Olá,sou Gabrielle Vilamar</h1><br><br>
+          <div class="linha">
+    </div><h2>
+            <h3>
+            <a href=""><i class="fas fa-envelope-open" id="social"></i></a> <strong id="email">gabivilamar@gmail.com</strong><br>
+            <a href=""><i class="fas fa-mobile-alt" id="social2"></i></a> <strong id="fone">(21)99251 1468</strong>
+            <p>FrontEnd Web & Mobile</p>  
+           </h2></h3>
     <div class="icons-social">
             <a href="https://github.com/GabiVilamar"><i class="fab fa-github"></i></a>
             <a href="https://www.facebook.com/Gabii.Vilamar/"><i class="fab fa-facebook-f"></i></a>
@@ -45,11 +49,11 @@
 </section>
       <section id="formacao" class="content">
        <div class="formacao">
+        <a href=""><i class="fas fa-book-reader fa-5x" id="social3"></i></a>
         <h1>Minha Formação</h1>
-        <a href=""><i class="fas fa-spin fa-book-reader fa-5x" id="social3"></i></a>
         <h2> Minha faculdade é a <strong>Faeterj Rio</strong> e meu curso é o de Análise e Desenvolvimento de Sistemas.
         <p>
-            <strong>🍾Me formo em Dezembro de 2021🍾</strong>
+            <br><strong>🍾 Me formo em Dezembro de 2021 🍾</strong>
         </p><br>
         <p>
             Estou sempre estudando algo novo, buscando sempre áreas que fomentem minha profissão, estes são alguns:
@@ -104,14 +108,14 @@
     <section id="adicionais" class="content">
         <h1>ADICIONAIS</h1>
         <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-       
     </section>
     <footer>
-        <p> &copy; 2020 | Gabrielle Vilamar</p>
+        <p> &copy; 2020 | Design por Gabrielle Vilamar</p>
     </footer>
     <script src="https://kit.fontawesome.com/fa6737acee.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="JavaScript/main.js"></script>
     <script src="JavaScript/menu-scroll.js"></script>
+    </div>
 </body>
 </html>
