@@ -11,9 +11,6 @@ html,body{
     font-family: "Roboto","Open Sans","Roboto", monospace;
    
 }
-.scroller{
-     scrollbar-color: orangered;
-}
 .botao{
     width: 10%;
     height: 10%;
@@ -111,14 +108,7 @@ nav a{
     margin-top: 0;
     transition-delay: .3s;
 }
-.linha{
-    width: 50%;
-    height: 1px;
-    position: absolute;
-    background-color: orangered;
-    margin-top: -25px;
-}
-.container{
+.container1{
     width: 50%;
     margin-top: 5%;
 }
@@ -204,7 +194,7 @@ figure{
     background-repeat: no-repeat;
     background-position: center center; 
     border-radius: 5px;
-    box-shadow: 0 0 10px #b6b6b6, 0 0 20px #b6b6b6, 0 0 20px #b6b6b6;   
+    box-shadow: 0 0 5px #b6b6b6, 0 0 10px #b6b6b6, 0 0 10px #b6b6b6;   
     text-align: center;
 }
 .content#home{
@@ -230,13 +220,13 @@ figure{
 #formacao{background-color:whitesmoke;}
 #experiencia{background-color: whitesmoke;}
 #perfilP{background-color: whitesmoke;}
-#adicionais{background-color: whitesmoke;}
+#adicionais{background-color: #FCCE00;}
 
 #email, #fone{
     color: #b6b6b6;
 }
 .formacao{
-    height: 600px;
+    height: 720px;
     width: 600px;
     background-color: white;
     padding: 3%;
@@ -252,6 +242,7 @@ figure{
     justify-content: center;
     align-items: center;
     list-style-type: none;
+    margin-top: 20px;
 }
 .content#formacao h1{
     padding-top: 2%;
@@ -264,7 +255,84 @@ figure{
     font-size: 14px;
     color:#808080;
 }
+.content#experiencia{
+    display:flex;
+    text-align: center;
+}
+#experiencia >.direita p,.esquerda p{
+    color: #808080;
+}
+.center{
+    background-color: #808080;
+    width: 2%;
+}
+.linha{
+    height: 50vh;
+    border-left: 1px solid;
+    border-color: #808080;
+    box-sizing: border-box; 
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    margin-top: 70px;
+  
+}
+.direita{
+    width: 49%;
+    height: 50vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right; 
+    padding-right: 20px; 
+    margin-top: 70px;
+}
+.esquerda{
+    width: 49%;
+    height: 50vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding-left:20px ;
+    margin-top: 70px;
+}.sub{
+    width: 50vw;
+    height: 1px;
+    background-color: orangered;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.content#perfil{
+    width: 100vw ;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 25vw;
+    padding-right: 25vw;
+    padding-top: 10%;
+}  
 
+
+.container{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 50vw;
+    background-color: #808080;
+    margin-bottom: 20px
+    
+}
+.skills{
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+.html{width: 70%; background-color: orangered;}
+.css{width: 60%; background-color: orangered;}
+.js{width: 60%; background-color: orangered;}
+.c{width: 70%; background-color: orangered;}
 /*section.content h2 >span{
     color:orangered;
 }*/
@@ -278,18 +346,28 @@ footer{
     font:'arial';
     font-size: 12px;
     background: whitesmoke;
-    width: 100%;
+    width: 100vw;
 }
 .cv{
     width: 100%;
-    height: 50px;
+    height: 5vh;
     text-align: center;
+    margin-top: 15vh ;
 }
 #download{
     width: 100px;
     border-radius: 3px;
-    background-color: black;
-    color: orangered;
+    background-color: #808080;
+    color: white;
+    padding: 10px;
+    position: relative;
+    font-size: 12px;
+    text-decoration: none;
+}
+#download:hover{
+    width: 100px;
+    border-radius: 3px;
+    background-color: orangered;
     padding: 10px;
     position: relative;
     font-size: 12px;
