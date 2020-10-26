@@ -221,7 +221,7 @@ figure{
     width: 600px;
     height: 700px;
     background-color: whitesmoke;
-    padding: 5%;
+    padding: 1% 5% 5% 5%;
 }
 .formacao ul{
   list-style-type: none;
@@ -237,7 +237,6 @@ figure{
    
 }
 .content#formacao h1{
-    padding-top: 1%;
     padding-bottom: 2%;
 }
 .content#formacao h2{
@@ -303,7 +302,7 @@ figure{
     margin-top: 100px;
 }
 .content#perfil{
-    width: 100vw ;
+    width: 100vw;
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
