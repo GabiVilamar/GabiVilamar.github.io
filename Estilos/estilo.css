@@ -221,7 +221,7 @@ figure{
     width: 600px;
     height: 700px;
     background-color: whitesmoke;
-    padding: 5%;
+    padding: 1% 5% 5% 5%;
 }
 .formacao ul{
   list-style-type: none;
